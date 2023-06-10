@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+        <h1 style="margin-top: 20px;color: white;">Love Prediction</h1>
+        <div style="margin-top: 20px;">
+            <input class="left" type="text" placeholder="Enter Your Name" id="inp"><br>
+            <input  type="text" id="input" placeholder="Enter Your Lover's Name"><br>
+            <button class="left" onclick="clic()">Click On</button>
+            <div class="le" id="display" style="color: white;"></div>
+        </div>
+   
+    <script>
+        function clic(){
+            var love = inp.value
+            var nice = input.value
+            let reg = /^[a-zA-Z]+$/
+            if (inp.value == "" || input.value == ""){
+                alert("Input Name")
+            } 
+            else if (reg.test(inp.value) === false || reg.test(input.value) === false){
+                alert("Enter Name and make sure it does not start with capital letter and no space in between")
+            }
+            
+            else{
+            var love = Math.round(Math.random()*100)
+            display.innerHTML = `<h1>${love}%</h1>`
+            var nice = Math.round(Math.random()*100)
+            display.innerHTML = `<h1>${nice}%</h1>`
+
+            }
+            inp.value = ""
+            input.value = ""
+        }
+    </script>
+</body>
+</html>

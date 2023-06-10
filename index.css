@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-position: center;
+    /* background-image: linear-gradient(to left, #fff, #ef23); */
+    background-image: url(./270.jpg);
+}
+input{
+    padding: 10px;
+    margin: 2px;
+}
+button{
+    padding: 7px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+button:hover{
+    background-color: bisque;
+}
